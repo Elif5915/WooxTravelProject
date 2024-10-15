@@ -130,6 +130,7 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminLayoutController.cs" />
     <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
+    <Compile Include="Areas\Admin\Controllers\DestinationController.cs" />
     <Compile Include="Context\TravelContext.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Entities\Admin.cs" />
@@ -606,6 +607,8 @@
     <Content Include="Areas\Admin\Views\AdminLayout\PartialFooter.cshtml" />
     <Content Include="Areas\Admin\Views\AdminLayout\PartialScript.cshtml" />
     <Content Include="Areas\Admin\Views\Category\CategoryList.cshtml" />
+    <Content Include="Areas\Admin\Views\Destination\DestinationList.cshtml" />
+    <Content Include="Areas\Admin\Views\Destination\createDestination.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
