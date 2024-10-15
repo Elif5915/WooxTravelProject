@@ -132,7 +132,9 @@
     <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
     <Compile Include="Areas\Admin\Controllers\DestinationController.cs" />
     <Compile Include="Context\TravelContext.cs" />
+    <Compile Include="Controllers\ErrorPagesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Entities\Admin.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Contact.cs" />
@@ -161,6 +163,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="colorlib-error-404-6\css\style.css" />
+    <Content Include="colorlib-error-404-6\index.html" />
+    <Content Include="colorlib-error-404-6\readme.txt" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -609,6 +614,7 @@
     <Content Include="Areas\Admin\Views\Category\CategoryList.cshtml" />
     <Content Include="Areas\Admin\Views\Destination\DestinationList.cshtml" />
     <Content Include="Areas\Admin\Views\Destination\createDestination.cshtml" />
+    <Content Include="Areas\Admin\Views\Destination\updateDestination.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -634,11 +640,13 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\ErrorPages\Page404.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Register\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
