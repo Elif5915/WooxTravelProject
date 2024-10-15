@@ -12,6 +12,8 @@ namespace WooxTravelProject.Areas.Admin.Controllers
         // GET: Admin/Category
 
         TravelContext context = new TravelContext();
+
+        [Authorize] //login olunca bu sf erişebilmemizi sağlar.
         public ActionResult CategoryList()
         {
             var values = context.Categories.ToList();

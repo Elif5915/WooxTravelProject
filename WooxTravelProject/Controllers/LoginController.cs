@@ -6,9 +6,10 @@ using System.Web.Mvc;
 
 namespace WooxTravelProject.Controllers
 {
-    public class ErrorPagesController : Controller
+    public class LoginController : Controller
     {
-        public ActionResult Page404()
+        // GET: Login
+        public ActionResult Index()
         {
             return View();
         }

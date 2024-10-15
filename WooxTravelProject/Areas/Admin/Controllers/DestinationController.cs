@@ -19,9 +19,9 @@ namespace WooxTravelProject.Areas.Admin.Controllers
             return View(values);
         }
         //attribute yazılmazsa default u gettir. httpget
-        public ActionResult createDestination() 
+        public ActionResult createDestination()
         {
-            return  View();
+            return View();
         }
 
         [HttpPost]
