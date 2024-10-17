@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WooxTravelProject.Context;
+using WooxTravelProject.Entities;
 
 namespace WooxTravelProject.Areas.Admin.Controllers
 {
@@ -10,9 +12,12 @@ namespace WooxTravelProject.Areas.Admin.Controllers
     public class ProfileController : Controller
     {
         // GET: Admin/Profile
+        TravelContext context = new TravelContext();
         public ActionResult Index()
         {
-            return View();
+            var a = Session["x"];
+            var values = context.Admins.Where(x => x.UserName == a).FirstOrDefault();
+            return View(values);
         }
     }
 }

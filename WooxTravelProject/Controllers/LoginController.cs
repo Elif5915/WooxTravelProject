@@ -25,7 +25,7 @@ namespace WooxTravelProject.Controllers
                 // dedik. Daha sonra ikinci paramtere false olması da şu  beni hatırla işini yapsın ve hatırlasın mı seçimi. false diyerek hayır beni hatırlama demiş olduk.
                 FormsAuthentication.SetAuthCookie(values.UserName, false);
                 Session["x"] = values.UserName;
-                return RedirectToAction("Index", "Profile", "Admin");
+                return RedirectToAction("Index", "Profile", new { area = "Admin" });
             }
             else
             {
