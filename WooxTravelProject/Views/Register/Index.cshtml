@@ -6,22 +6,25 @@
 
 <link href="~/Content/bootstrap.min.css" rel="stylesheet"/>
 
-<div class="container">
-    <br /><br />
-    <div class="alert alert-primary"><h3>Yeni Kullanıcı Kayıt Sayfası</h3></div>
-    <label>Adınız</label>
-    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
-    <br />
-    <label>Soyadınız</label>
-    @Html.TextBoxFor(x => x.Surname, new { @class = "form-control" })
-    <br />
-    <label>Email Adresiniz</label>
-    @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
-    <br />
-    <label>Kullanıcı Adınız</label>
-    @Html.TextBoxFor(x => x.UserName, new { @class = "form-control" })
-    <br />
-    <label>Şifreniz</label>
-    @Html.TextBoxFor(x => x.Password, new { @class = "form-control" })
-    <br />
-</div>
+<form method="post">
+    <div class="container">
+        <br /><br />
+        <div class="alert alert-primary"><h3>Yeni Kullanıcı Kayıt Sayfası</h3></div>
+        <label>Adınız</label>
+        @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+        <br />
+        <label>Soyadınız</label>
+        @Html.TextBoxFor(x => x.Surname, new { @class = "form-control" })
+        <br />
+        <label>Email Adresiniz</label>
+        @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+        <br />
+        <label>Kullanıcı Adınız</label>
+        @Html.TextBoxFor(x => x.UserName, new { @class = "form-control" })
+        <br />
+        <label>Şifreniz</label>
+        @Html.TextBoxFor(x => x.Password, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-primary">Kayıt Ol</button>
+    </div>
+</form>

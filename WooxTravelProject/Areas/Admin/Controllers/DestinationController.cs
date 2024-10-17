@@ -8,11 +8,13 @@ using WooxTravelProject.Entities;
 
 namespace WooxTravelProject.Areas.Admin.Controllers
 {
+
+    [Authorize]
     public class DestinationController : Controller
     {
-        // GET: Admin/Destination
-
+        
         TravelContext context = new TravelContext();
+
         public ActionResult DestinationList()
         {
             var values = context.Destinations.ToList();

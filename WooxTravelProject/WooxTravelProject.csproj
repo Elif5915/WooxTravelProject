@@ -131,6 +131,7 @@
     <Compile Include="Areas\Admin\Controllers\AdminLayoutController.cs" />
     <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
     <Compile Include="Areas\Admin\Controllers\DestinationController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProfileController.cs" />
     <Compile Include="Context\TravelContext.cs" />
     <Compile Include="Controllers\ErrorPagesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -616,6 +617,7 @@
     <Content Include="Areas\Admin\Views\Destination\DestinationList.cshtml" />
     <Content Include="Areas\Admin\Views\Destination\createDestination.cshtml" />
     <Content Include="Areas\Admin\Views\Destination\updateDestination.cshtml" />
+    <Content Include="Areas\Admin\Views\Profile\Index.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
