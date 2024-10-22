@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WooxTravelProject.Entities;
+using WooxTravelProject.Context;
 
 namespace WooxTravelProject.Controllers
 {
     public class DefaultController : Controller
     {
         // GET: Default
+        TravelContext context = new TravelContext();
         public ActionResult Index()
         {
             return View();
@@ -34,7 +37,8 @@ namespace WooxTravelProject.Controllers
 
         public PartialViewResult PartialCountry()
         {
-            return PartialView();
+            var values = context.Destinations.ToList();
+            return PartialView(values);
         }
         public PartialViewResult PartialFooter()
         {
